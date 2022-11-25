@@ -12,6 +12,7 @@ and shows that when the consumer is resumed then all the messages (starting from
 * Send another batch of messages: `for i in $(seq 6 10); do ./send-message.sh  "Message $i"; done`
 
 **Expected result**: each message is consumed once
+
 **Actual result**: the second time the consumer is resumed, it reads the messages since the beginning:
 messages 1-5 are consumed twice.
    
