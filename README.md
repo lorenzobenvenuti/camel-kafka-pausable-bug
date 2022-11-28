@@ -3,6 +3,8 @@
 This project runs the Camel route used in [this test](https://github.com/apache/camel/blob/2c01082032346753cc6621ab4530b0969f12bac7/components/camel-kafka/src/test/java/org/apache/camel/component/kafka/integration/pause/KafkaPausableConsumerCircuitBreakerIT.java)
 and shows that when the consumer is resumed then all the messages (starting from the earliest offset) are consumed.
 
+See [this issue](https://issues.apache.org/jira/browse/CAMEL-18759)
+
 ## How to reproduce the issue
 
 * Run Kafka: `docker-compose -f docker-compose.yaml up`
