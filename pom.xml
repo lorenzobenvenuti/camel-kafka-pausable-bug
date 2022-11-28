@@ -15,7 +15,7 @@
 	<description>Bug reproducer</description>
 	<properties>
 		<java.version>11</java.version>
-		<camel.version>3.18.3</camel.version>
+		<camel.version>3.20.0-SNAPSHOT</camel.version>
 	</properties>
 	<dependencies>
 		<dependency>
