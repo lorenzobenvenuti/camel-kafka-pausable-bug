@@ -8,7 +8,7 @@ and shows that when the consumer is resumed then all the messages (starting from
 * Run Kafka: `docker-compose -f docker-compose.yaml up`
 * Run the application: `mvn spring-boot:run`
 * Send a batch of messages: `for i in $(seq 1 5); do ./send-message.sh  "Message $i"; done`
-* Reset the offset: `curl -X POST http://localhost:8080/reset` (to simulate another downstream "outage")
+* Reset the counter: `curl -X POST http://localhost:8080/reset` (to simulate another downstream "outage")
 * Send another batch of messages: `for i in $(seq 6 10); do ./send-message.sh  "Message $i"; done`
 
 **Expected result**: each message is consumed once
