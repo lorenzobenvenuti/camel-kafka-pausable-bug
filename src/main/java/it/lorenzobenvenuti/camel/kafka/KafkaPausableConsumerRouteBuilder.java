@@ -98,7 +98,7 @@ public class KafkaPausableConsumerRouteBuilder extends RouteBuilder {
                         throw new RuntimeCamelException("Error");
                     }
                 })
-                .log("Message sucessfully processed ${body}")
+                .log("Message successfully processed ${body}")
                 .end();
     }
 
