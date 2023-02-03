@@ -17,7 +17,9 @@ See [this issue](https://issues.apache.org/jira/browse/CAMEL-18759)
 
 **Actual result**: the second time the consumer is resumed, it reads the messages since the beginning:
 messages 1-5 are consumed twice.
-   
+ 
+Tested with 3.18.3, 3.20.1, 3.21.0-SNAPSHOT (on 2022-02-03 at 16:30 UTC)
+
 ## Notes
 
 * The test mentioned above is setting `autoOffsetReset=earliest`; it looks like the issue happens
